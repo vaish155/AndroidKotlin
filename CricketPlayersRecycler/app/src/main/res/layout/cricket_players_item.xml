@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:id="@+id/circketItemImageId"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/circketItemImageId"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:id="@+id/CricketItemNameId"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CricketItemNameId"
+        android:layout_toRightOf="@+id/circketItemImageId"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:id="@+id/CricketItemCountryId"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CricketItemCountryId"
+        android:layout_toRightOf="@+id/circketItemImageId"
+        android:textColor="@color/teal_700"
+        android:layout_margin="5dp"
+        android:textSize="14sp"
+        android:id="@+id/CricketItemDescId"
+        />
+
+</RelativeLayout>
