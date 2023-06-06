@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/emailInp"
+        android:hint="Email ID"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/emailInp"
+        android:layout_marginTop="100dp"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:id="@+id/pwdInp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/pwdInp"
+        android:id="@+id/submitBtn"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh Table"
+        android:layout_below="@+id/submitBtn"
+        android:id="@+id/refreshBtn"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sqlEmailsRecyc"
+        android:layout_below="@+id/refreshBtn"
+        android:layout_marginTop="25dp"
+        />
+</RelativeLayout>
