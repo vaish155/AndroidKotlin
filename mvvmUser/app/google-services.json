@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "82194604750",
+    "firebase_url": "https://fir-demo-6f82d-default-rtdb.firebaseio.com",
+    "project_id": "fir-demo-6f82d",
+    "storage_bucket": "fir-demo-6f82d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82194604750:android:60cd2176de83a6393d669f",
+        "android_client_info": {
+          "package_name": "com.example.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82194604750-hit41pi9uj9rtpn3ju9n5k397asflv5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzvawEVVWlSBsdcPFOsS6ZTBoTweL47gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82194604750-hit41pi9uj9rtpn3ju9n5k397asflv5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82194604750:android:8fed5b3805833bcb3d669f",
+        "android_client_info": {
+          "package_name": "com.vaishnav.mvvmfirebasertdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82194604750-hit41pi9uj9rtpn3ju9n5k397asflv5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzvawEVVWlSBsdcPFOsS6ZTBoTweL47gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82194604750-hit41pi9uj9rtpn3ju9n5k397asflv5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82194604750:android:cd6b3e99f05662353d669f",
+        "android_client_info": {
+          "package_name": "com.vaishnav.mvvmuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82194604750-hit41pi9uj9rtpn3ju9n5k397asflv5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzvawEVVWlSBsdcPFOsS6ZTBoTweL47gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82194604750-hit41pi9uj9rtpn3ju9n5k397asflv5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
