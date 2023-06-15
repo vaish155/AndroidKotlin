@@ -6,6 +6,7 @@ import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import androidx.lifecycle.ViewModelProvider
+import com.vaishnav.mvvmuser.Model.SignInModel
 import com.vaishnav.mvvmuser.R
 import com.vaishnav.mvvmuser.Repository.signInFactory
 import com.vaishnav.mvvmuser.Repository.signInRepository
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             }
             else
             {
-                FbViewModel.signInVM(emailInpId.text.toString(), pwdInpId.text.toString())
+                FbViewModel.signInVM(SignInModel(emailInpId.text.toString(), pwdInpId.text.toString()), this@MainActivity)
             }
         }
 

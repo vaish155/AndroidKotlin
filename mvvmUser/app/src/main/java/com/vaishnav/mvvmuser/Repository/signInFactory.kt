@@ -11,6 +11,6 @@ class signInFactory(private val SignInRepository : signInRepository) : ViewModel
         {
             return fbViewModel(SignInRepository) as T
         }
-        throw IllegalArgumentException("Unknow VM Class")
+        throw IllegalArgumentException("Unknown VM Class")
     }
 }
