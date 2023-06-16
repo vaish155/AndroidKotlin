@@ -10,7 +10,7 @@ class fbSendDataVM(private val sendDataRepository: SendDataRepository) : ViewMod
 
     fun sendDataVM(uname : String, sendDataModel: SendDataModel, context: Context)
     {
-        sendDataRepository.sendDataRepositoryFn(uname, sendDataModel.nameModel, sendDataModel.bioModel, sendDataModel.dpUrlModel)
+        sendDataRepository.sendDataRepositoryFn(uname, sendDataModel.nameModel, sendDataModel.bioModel, sendDataModel.dpIvModel)
         Toast.makeText(context, "Updated", Toast.LENGTH_SHORT).show()
 
     }

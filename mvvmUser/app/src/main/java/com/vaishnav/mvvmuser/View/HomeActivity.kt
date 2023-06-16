@@ -1,7 +1,9 @@
 package com.vaishnav.mvvmuser.View
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.text.Editable
 import android.widget.Button
 import android.widget.EditText
@@ -65,11 +67,25 @@ class HomeActivity : AppCompatActivity() {
             userIvId.setImageResource(androidx.appcompat.R.drawable.abc_ic_arrow_drop_right_black_24dp)
         }
 
+        userIvId.setOnClickListener {
+            val galleryIntent = Intent(Intent.ACTION_PICK,MediaStore.Images.Media.INTERNAL_CONTENT_URI)
+            startActivityForResult(galleryIntent, 100)
+        }
+
         sendDataRepository = SendDataRepository()
         FbSendDataVM = ViewModelProvider(this, SendDataFactory(sendDataRepository)).get(fbSendDataVM::class.java)
 
         makeChangesBtnId.setOnClickListener {
-            FbSendDataVM.sendDataVM(uname, SendDataModel(userNameId.text.toString(), userBioId.text.toString(), " "), this@HomeActivity)
+            FbSendDataVM.sendDataVM(uname, SendDataModel(userNameId.text.toString(), userBioId.text.toString(), userIvId), this@HomeActivity)
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(resultCode == RESULT_OK && requestCode == 100)
+        {
+            var imageUri = data?.data
+            userIvId.setImageURI(imageUri)
         }
     }
 }

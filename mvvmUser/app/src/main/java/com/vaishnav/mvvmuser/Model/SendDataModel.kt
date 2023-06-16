@@ -1,3 +1,5 @@
 package com.vaishnav.mvvmuser.Model
 
-data class SendDataModel (val nameModel : String, val bioModel : String, val dpUrlModel : String)
+import android.widget.ImageView
+
+data class SendDataModel (val nameModel : String, val bioModel : String, val dpIvModel : ImageView)

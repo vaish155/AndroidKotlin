@@ -1,5 +1,11 @@
 package com.vaishnav.mvvmuser.ViewModel
 
+import android.app.Activity.RESULT_OK
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.provider.MediaStore
+import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.lifecycle.ViewModel
 import com.google.firebase.database.DatabaseReference
 import com.vaishnav.mvvmuser.Repository.GetUserDataRepository
