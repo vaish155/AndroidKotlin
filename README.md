@@ -12,3 +12,4 @@
 * mvvmFirebaseRTDB: The projet has a feature by which the user can send a data to a hardcoded location that points to a Firebase RTDB node. The same change is retrieved and reflected on a textview. It follows MVVM Architecture.
 * mvvmUser: The project has the following features: Custom Email - Password Sign In using Firebase Authentication, Profile Data Updation and Retrieval using Firebase Storage and RTDB. It follows MVVM Architecture.
 * ReactiveProgrammingFirst: Basic Hello World Program that follows Reactive Programming.
+* ReactiveFirebaseRTDB: Basic read write application using Reactive Programming.
